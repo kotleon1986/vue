@@ -1,10 +1,10 @@
 <template>
-  <div class="home"></div>
+  <div class="dashboard">Dashboard</div>
 </template>
 
 <script>
 export default {
-  name: "Home",
+  name: "Dashboard",
   components: {}
 };
 </script>

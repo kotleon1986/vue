@@ -28,12 +28,8 @@ export default {
 
   actions: {
     async login({ dispatch }, data) {
-      try {
-        let response = await axios.post("auth/login", data);
-        return dispatch("attempt", response.data.data.token);
-      } catch (e) {
-        console.log(e);
-      }
+      let response = await axios.post("auth/login", data);
+      return dispatch("attempt", response.data.data.token);
     },
 
     async attempt({ commit, state }, token) {
